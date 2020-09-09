@@ -1,2 +1,2 @@
 # dotfiles
-My personal customization files.
+My personal configuration files.
