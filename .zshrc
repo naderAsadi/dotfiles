@@ -116,6 +116,10 @@ export AIRFLOW_HOME=~/.airflow
 export KAFKA_HOME="/opt/kafka_2.6.0"
 export PATH="$PATH:${KAFKA_HOME}/bin"
 
+# CUDA                                                                                                            
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64                                                                      
+export PATH=$PATH:/usr/local/cuda/bin
+
 
 ######################
 # Alias
