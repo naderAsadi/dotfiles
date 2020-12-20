@@ -103,7 +103,7 @@ source $ZSH/oh-my-zsh.sh
 export SPARK_HOME=/opt/spark-3.0.1
 export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 export PYSPARK_PYTHON=$HOME/.anaconda/bin/python
-#export PYSPARK_DRIVER_PYTHON="jupyter"
+export PYSPARK_DRIVER_PYTHON="jupyter-lab"
 #export PYSPARK_DRIVER_PYTHON_OPTS="lab"
 
 # GraphFrames
