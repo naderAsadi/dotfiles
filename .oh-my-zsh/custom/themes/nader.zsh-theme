@@ -12,4 +12,4 @@ ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[blue]%}"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=243'
 
 
-PROMPT=' %{$fg_bold[white]%}%{$FG[039]%}%c%{$reset_color%} $(git_prompt_info)$(arrow) '
+PROMPT='%{$FG[249]%}[%T] %{$FG[039]%}%f%{$fg_bold[white]%}%{$FG[039]%}%c%{$reset_color%} $(git_prompt_info)$(arrow) '
