@@ -1,5 +1,5 @@
 function arrow(){
-	arrow="%{$fg_bold[yellow]%}%{$FG[214]%}❭%{$reset_color%}";
+	arrow="%{$fg_bold[yellow]%}%{$FG[214]%}❱%{$reset_color%}";
 	echo "${arrow}";
 }
 
