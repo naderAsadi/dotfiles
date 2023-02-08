@@ -23,6 +23,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=246'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -31,7 +32,7 @@ source $ZSH/oh-my-zsh.sh
 if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='vim'
 else
-  export EDITOR='mvim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -41,27 +42,13 @@ fi
 ######################
 # Exports
 ######################
-# Spark path
-export SPARK_HOME=/opt/spark-3.0.1
-export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
-export PYSPARK_PYTHON=$HOME/.anaconda/bin/python
-export PYSPARK_DRIVER_PYTHON="jupyter-lab"
-#export PYSPARK_DRIVER_PYTHON_OPTS="lab"
-
-# GraphFrames
-#export SPARK_OPTS="--packages graphframes:graphframes:0.8.1-spark2.4-s_2.11"
-
-# Airflow
-export AIRFLOW_HOME=~/.airflow
-
-# Kafka
-export KAFKA_HOME="/opt/kafka_2.6.0"
-export PATH="$PATH:${KAFKA_HOME}/bin"
-
 # CUDA                                                                                                            
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64
 export PATH=$PATH:/usr/local/cuda/bin
 
+# GEM
+export GEM_HOME="$(ruby -e 'puts Gem.user_dir')"
+export PATH="$PATH:$GEM_HOME/bin"
 
 ######################
 # Alias
