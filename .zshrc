@@ -23,7 +23,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=246'
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=245'
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
